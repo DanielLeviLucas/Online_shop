@@ -130,4 +130,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # django sessions
 
-CART_SESSIONS_ID = 'cart'
+CART_SESSION_ID = 'cart'
