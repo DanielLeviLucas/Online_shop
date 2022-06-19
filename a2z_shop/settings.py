@@ -133,3 +133,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # django sessions
 
 CART_SESSION_ID = 'cart'
+
+# Email backend
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
