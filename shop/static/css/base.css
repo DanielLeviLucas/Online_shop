@@ -134,7 +134,7 @@ ul.errorlist {
 }
 
 #subheader {
-  background: #ececec;
+  background: hsl(247, 10%, 40%);
   color: #444;
   padding: 15px 100px;
   overflow: auto;
@@ -239,19 +239,24 @@ ul.errorlist {
 .order-info {
   float: right;
   width: 300px;
-  background: #efefef;
+  background: hsl(248, 10%, 45%);
   padding: 10px 20px;
   color: #333;
   border-bottom: 4px solid #5993bb;
 }
 
+.order-info > a {
+  color: #efefef;
+}
+
 .order-info h3 {
-  color: #5993bb;
+  color: #efefef;
 }
 
 .order-info ul li {
   margin: 0;
   padding: 0;
+  color: #efefef;
   font-size: 14px;
 }
 
@@ -265,7 +270,7 @@ ul.errorlist {
 }
 
 .neg {
-  color: #dc1616;
+  color: #e4715d;
 }
 
 .languages {
@@ -343,4 +348,8 @@ form div.field {
 a,
 p {
   color: #efefef;
+}
+
+.cart {
+  color: #efefef !important;
 }
