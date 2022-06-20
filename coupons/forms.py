@@ -1,5 +1,6 @@
 from django import forms
+from django.utils.translation import gettext_lazy as _
 
 
 class CouponApplyForm(forms.Form):
-    code = forms.CharField(max_length=10)
+    code = forms.CharField(label=_('Coupon'), max_length=10)
