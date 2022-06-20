@@ -10,11 +10,17 @@
             {% for item in cart %}
                 <li>
                     {{ item.quantity }} &#829; {{ item.product.name }}
-                    <span>&#8377;{{ item.total_price }}</span>
+                    <span>&#8377;{{ item.total_price|floatformat:2 }}</span>
                 </li>
             {% endfor %}
+            {% if cart.coupon %}
+                <p>
+                    "{{ cart.coupon.code }}" ({{ cart.coupon.discount }}&percnt; off)
+                    <span class="neg">&emsp; &minus; &#8377;{{ cart.get_discount|floatformat:2 }}</span>
+                </p>
+            {% endif %}
         </ul>
-        <p>Total: &#8377;{{ cart.get_total_price }}</p>
+        <p>Total: &#8377;{{ cart.get_total_price_after_discount|floatformat:2 }}</p>
     </div>
     <form action="" method="post" class="order-form">
         {{ form.as_p }}
