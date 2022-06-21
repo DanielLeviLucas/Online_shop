@@ -17,6 +17,7 @@ celery = "*"
 flower = "*"
 braintree = "*"
 weasyprint = "*"
+redis = "*"
 
 [dev-packages]
 
